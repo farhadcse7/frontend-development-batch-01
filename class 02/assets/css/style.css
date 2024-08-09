@@ -1,0 +1,244 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Vairable declaration */
+:root {
+    --black: #050505;
+    --light-black: #333333;
+    --white: #ffffff;
+    --primary: #25EFD2;
+}
+
+/* Common css start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+    display: inline-block;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--black);
+}
+
+/* Common css end  */
+
+/* Header css start  */
+.header-area {
+    width: 100%;
+    background-color: var(--black);
+    padding: 20px 0;
+}
+
+.header-area .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-area .menus ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.header-area .menus ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.header-area .menus ul li a:hover {
+    color: var(--primary);
+}
+
+.header-area .action-buttons .link-btn {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.header-area .action-buttons .link-btn:hover {
+    color: var(--primary);
+}
+
+.header-area .action-buttons .sign-up-btn {
+    margin-left: 27px;
+    background-color: var(--white);
+    color: var(--light-black);
+    padding: 16px 40px;
+    border-radius: 10px;
+}
+
+.header-area .action-buttons .sign-up-btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Header css end  */
+
+/* Banner css start  */
+
+.banner-area {
+    width: 100%;
+    background-color: var(--primary);
+    padding-top: 62px;
+    padding-bottom: 50px;
+}
+
+.banner-area .banner-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-area .banner-main .text {
+    max-width: 636px;
+}
+
+.banner-area .banner-main .text .banner-title {
+    font-size: 54px;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-area .banner-main .text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 40px;
+    color: var(--light-black);
+}
+
+.banner-area .banner-main .text .learn-more {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--light-black);
+    padding: 18px 50px;
+    border: 1px solid var(--light-black);
+    border-radius: 10px;
+}
+
+.banner-area .banner-main .text .learn-more:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.banner-area .banner-main .image {
+    width: 460px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-area .banner-main .image img {
+    width: 100%;
+}
+
+.banner-area .banner-main .image .banner-pattern {
+    position: absolute;
+    top: 0;
+    left: -136px;
+    width: 673px;
+    z-index: -1;
+}
+
+.banner-area .banner-dots {
+    text-align: center;
+}
+
+.banner-area .banner-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.banner-area .banner-dots li button {
+    width: 12px;
+    height: 12px;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 0;
+}
+
+.banner-area .banner-dots .active button {
+    width: 28px;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+/* Banner css end  */
+
+/* Products area start  */
+.featured-products .title {
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 38px;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.featured-products .products-images {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.featured-products .products-images img {
+    border-radius: 16px;
+}
+
+.featured-products .products-dots {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.featured-products .products-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.featured-products .products-dots li button {
+    width: 12px;
+    height: 12px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    border: 0;
+}
+
+.featured-products .products-dots .active-dot button {
+    width: 28px;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+/* Products area end  */
