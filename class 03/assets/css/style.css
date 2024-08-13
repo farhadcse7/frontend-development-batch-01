@@ -1,0 +1,650 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Vairable declaration */
+:root {
+    --black: #050505;
+    --light-black: #333333;
+    --white: #ffffff;
+    --primary: #25EFD2;
+    --transition: 0.3s;
+}
+
+/* Common css start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--light-black);
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Common css end  */
+
+/* Theme btn css start  */
+
+.theme-btn {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--light-black);
+    padding: 18px 54px;
+    text-transform: capitalize;
+}
+
+.theme-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Theme btn css end  */
+
+/* Header css start  */
+.header-area {
+    width: 100%;
+    background-color: var(--black);
+    padding: 20px 0;
+}
+
+.header-area .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-area .menus ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.header-area .menus ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.header-area .menus ul li a:hover {
+    color: var(--primary);
+}
+
+.header-area .action-buttons .link-btn {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.header-area .action-buttons .link-btn:hover {
+    color: var(--primary);
+}
+
+.header-area .action-buttons .sign-up-btn {
+    margin-left: 27px;
+    background-color: var(--white);
+    color: var(--light-black);
+    padding: 16px 40px;
+    border-radius: 10px;
+}
+
+.header-area .action-buttons .sign-up-btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Header css end  */
+
+/* Banner css start  */
+
+.banner-area {
+    width: 100%;
+    background-color: var(--primary);
+    padding-top: 62px;
+    padding-bottom: 50px;
+}
+
+.banner-area .banner-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-area .banner-main .text {
+    max-width: 636px;
+}
+
+.banner-area .banner-main .text .banner-title {
+    font-size: 54px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-area .banner-main .text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 40px;
+    color: var(--light-black);
+}
+
+.banner-area .banner-main .text .learn-more {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--light-black);
+    padding: 18px 50px;
+    border: 1px solid var(--light-black);
+    border-radius: 10px;
+}
+
+.banner-area .banner-main .text .learn-more:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.banner-area .banner-main .image {
+    width: 460px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-area .banner-main .image img {
+    width: 100%;
+}
+
+.banner-area .banner-main .image .banner-pattern {
+    position: absolute;
+    top: 0;
+    left: -136px;
+    width: 673px;
+    z-index: -1;
+}
+
+.banner-area .banner-dots {
+    text-align: center;
+}
+
+.banner-area .banner-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.banner-area .banner-dots li button {
+    width: 12px;
+    height: 12px;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 0;
+}
+
+.banner-area .banner-dots .active button {
+    width: 28px;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+/* Banner css end  */
+
+/* Featured Products 1 area start  */
+/* .featured-products .title {
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 38px;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.featured-products .products-images {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.featured-products .products-images img {
+    border-radius: 16px;
+}
+
+.featured-products .products-dots {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.featured-products .products-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.featured-products .products-dots li button {
+    width: 12px;
+    height: 12px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    border: 0;
+}
+
+.featured-products .products-dots .active-dot button {
+    width: 28px;
+    background-color: var(--black);
+    border-radius: 30px;
+} */
+
+/* Featured Products 1 area end  */
+
+/* Featured Products 2 area start  */
+.featured-area {
+    width: 100%;
+    padding-top: 180px;
+}
+
+.featured-area .featured-products-title {
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 38px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.featured-area .featured-products .featured-products-list {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.featured-area .featured-products-dots {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-area .featured-products-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.featured-area .featured-products-dots li button {
+    width: 12px;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    border: 0;
+}
+
+.featured-area .featured-products-dots .active button {
+    width: 28px;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+/* Featured Products 2 area end  */
+
+/* Product area start  */
+.product-area {
+    margin-top: 184px;
+}
+
+.product-area .product-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product-area .product-item .image {
+    max-width: 588px;
+    width: 100%;
+}
+
+.product-area .product-item .text {
+    max-width: 526px;
+    width: 100%;
+}
+
+.product-area .product-item .text .link-btn {
+    background-color: var(--primary);
+    color: var(--light-black);
+    text-transform: capitalize;
+    margin-top: 34px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-area .product-item .text .link-btn span {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-area .product-item .text .link-btn span svg {
+    width: 12px;
+    height: 12px;
+    color: var(--white);
+}
+
+.product-area .product-item .text .link-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.product-area .product-item .text .link-btn:hover span {
+    background-color: var(--white);
+    transition: var(--transition);
+}
+
+.product-area .product-item .text .link-btn:hover span svg {
+    color: var(--black);
+    transition: var(--transition);
+}
+
+.product-area .product-item .text .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 29px;
+}
+
+.product-area .product-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Product area end  */
+
+/* Shop now area start  */
+.shop-now-area {
+    margin-top: 140px;
+}
+
+.shop-now-area .main {
+    background-color: var(--primary);
+    border-radius: 30px;
+    padding: 49px;
+    padding-right: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-now-area .main .text {
+    max-width: 486px;
+    width: 100%;
+}
+
+.shop-now-area .main .text .title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    margin-bottom: 40px;
+}
+
+.shop-now-area .main .text p {
+    margin-bottom: 40px;
+}
+
+.shop-now-area .main .image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+}
+
+.shop-now-area .main .image img {
+    margin-right: 40px;
+}
+
+.shop-now-area .main .image::before {
+    position: absolute;
+    width: 484px;
+    height: 408px;
+    background-color: rgba(5, 5, 5, 0.07);
+    border-radius: 500px 30px 30px 500px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    content: "";
+    z-index: -1;
+    border: 1px solid var(--white);
+}
+
+/* Shop now area end  */
+
+/* contact area start  */
+.contact-area {
+    margin-top: 140px;
+}
+
+.contact-area .main {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-area .main .image {
+    max-width: 585px;
+    width: 100%;
+    border-radius: 13px;
+}
+
+.contact-area .main .image img {
+    border-radius: 13px;
+}
+
+.contact-area .main .contact-form .title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
+
+.contact-area .main .contact-form p {
+    margin-bottom: 26px;
+}
+
+.contact-area .main .contact-form .form-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.contact-area .main .contact-form .form-item .single-iteam {
+    width: 50%;
+}
+
+.contact-area .main .contact-form .form-item input {
+    border: 1px solid rgba(51, 51, 51, 0.33);
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 16px;
+    transition: var(--transition);
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--black);
+}
+
+.contact-area .main .contact-form .form-item input::placeholder {
+    color: var(--black);
+}
+
+.contact-area .main .contact-form .form-item input:focus {
+    outline: none;
+    border-color: var(--black);
+}
+
+.contact-area .main .contact-form .form-item textarea {
+    border: 1px solid rgba(51, 51, 51, 0.33);
+    height: 124px;
+    border-radius: 8px;
+    padding: 16px;
+    transition: var(--transition);
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--black);
+}
+
+.contact-area .main .contact-form .form-item textarea::placeholder {
+    color: var(--black);
+}
+
+.contact-area .main .contact-form .form-item textarea:focus {
+    outline: none;
+    border-color: var(--black);
+}
+
+.contact-area .main .contact-form .theme-btn {
+    background-color: var(--primary);
+    border: 0;
+    transition: var(--transition);
+    cursor: pointer;
+    border-top: 10px;
+}
+
+/* contact area end  */
+
+/* footer area start  */
+.footer-area {
+    background-color: var(--black);
+    padding: 63px 0 23px 0;
+    margin-top: 140px;
+}
+
+.footer-area .main {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-area .main .footer-widget .logo {
+    margin-bottom: 14px;
+}
+
+.footer-area .main .footer-widget .footer-about {
+    color: var(--white);
+}
+
+.footer-area .main .footer-widget.footer-about-info {
+    max-width: 240px;
+}
+
+.footer-area .main .footer-widget .footer-title {
+    color: var(--primary);
+    margin-bottom: 28px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footer-area .main .footer-widget .footer-link ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 18px;
+    text-transform: capitalize;
+    line-height: normal;
+}
+
+.footer-area .main .footer-widget .footer-link ul li a:hover {
+    color: var(--primary);
+}
+
+.footer-area .main .footer-widget .footer-link ul li+li {
+    margin-top: 22px;
+}
+
+.footer-area .main .footer-widget .address {
+    max-width: 258px;
+}
+
+.footer-area .main .footer-widget .address h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary);
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-area .main .footer-widget .address p,
+a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 26px;
+    margin-bottom: 22px;
+}
+
+.footer-area .main .footer-widget .hour p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 26px;
+}
+
+.footer-area .main .footer-widget .hour p.closed {
+    margin-top: 38px;
+}
+
+.footer-area .copyright {
+    text-align: center;
+    padding-top: 24px;
+    margin-top: 65px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer-area .copyright p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 18px;
+}
+
+/* footer area end  */
