@@ -1,0 +1,50 @@
+/* Featured Products 2 area start  */
+.featured-area {
+    width: 100%;
+    padding-top: 180px;
+
+    .featured-products-title {
+        font-size: 48px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        margin-bottom: 38px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .featured-products {
+        .featured-products-list {
+            display: flex;
+            gap: 22px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .featured-products-dots {
+        text-align: center;
+        margin-bottom: 40px;
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            button {
+                width: 12px;
+                height: 12px;
+                background-color: #e0e0e0;
+                border-radius: 50%;
+                border: 0;
+            }
+        }
+
+        .active {
+            button {
+                width: 28px;
+                background-color: $black;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+/* Featured Products 2 area end  */

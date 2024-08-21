@@ -1,0 +1,61 @@
+/* Google font  */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Common css start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--light-black);
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.theme-btn {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--light-black);
+    padding: 18px 54px;
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+/* Common css end  */

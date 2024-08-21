@@ -1,0 +1,77 @@
+/* Product area start  */
+.product-area {
+    margin-top: 184px;
+
+    .product-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+
+        .image {
+            max-width: 588px;
+            width: 100%;
+        }
+
+        .text {
+            max-width: 526px;
+            width: 100%;
+
+            .link-btn {
+                background-color: $primary;
+                color: $light-black;
+                text-transform: capitalize;
+                margin-top: 34px;
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+
+                span {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    background-color: $black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        width: 12px;
+                        height: 12px;
+                        color: $white;
+                    }
+                }
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+
+                    span {
+                        background-color: $white;
+                        transition: var(--transition);
+
+                        svg {
+                            color: $black;
+                            transition: var(--transition);
+                        }
+                    }
+                }
+            }
+
+            .title {
+                font-family: "Montserrat", sans-serif;
+                font-size: 48px;
+                line-height: 48px;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin-bottom: 29px;
+            }
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+/* Product area end  */

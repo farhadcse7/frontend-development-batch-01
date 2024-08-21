@@ -1,0 +1,95 @@
+/* Banner css start  */
+
+.banner-area {
+    width: 100%;
+    background-color: $primary;
+    padding-top: 62px;
+    padding-bottom: 50px;
+
+    .banner-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text {
+            max-width: 636px;
+
+            .banner-title {
+                font-size: 54px;
+                font-family: "Montserrat", sans-serif;
+                margin-bottom: 30px;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 40px;
+                color: $light-black;
+            }
+
+            .learn-more {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 18px;
+                color: $light-black;
+                padding: 18px 50px;
+                border: 1px solid $light-black;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+        }
+
+        .image {
+            width: 460px;
+            position: relative;
+            z-index: 1;
+
+            img {
+                width: 100%;
+            }
+
+            .banner-pattern {
+                position: absolute;
+                top: 0;
+                left: -136px;
+                width: 673px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .banner-dots {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            button {
+                width: 12px;
+                height: 12px;
+                background-color: $white;
+                border-radius: 50%;
+                border: 0;
+            }
+        }
+
+        .active {
+            button {
+                width: 28px;
+                background-color: $black;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+
+/* Banner css end  */

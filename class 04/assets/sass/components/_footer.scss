@@ -1,0 +1,112 @@
+/* footer area start  */
+.footer-area {
+    background-color: $black;
+    padding: 63px 0 23px 0;
+    margin-top: 140px;
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        .footer-widget {
+            .logo {
+                margin-bottom: 14px;
+            }
+
+            .footer-about {
+                color: $white;
+            }
+
+            .footer-title {
+                color: $primary;
+                margin-bottom: 28px;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            .footer-link {
+                ul {
+                    li {
+                        a {
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: $white;
+                            line-height: 18px;
+                            text-transform: capitalize;
+                            line-height: normal;
+
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+
+                        &+li {
+                            margin-top: 22px;
+                        }
+                    }
+                }
+            }
+
+            .address {
+                max-width: 258px;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $primary;
+                    line-height: 18px;
+                    margin-bottom: 20px;
+                }
+
+                p,
+                a {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $white;
+                    line-height: 26px;
+                    margin-bottom: 22px;
+                }
+            }
+
+            .hour {
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $white;
+                    line-height: 26px;
+
+                    &.closed {
+                        margin-top: 38px;
+                    }
+                }
+
+            }
+
+            &.footer-about-info {
+                max-width: 240px;
+            }
+
+        }
+
+
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 24px;
+        margin-top: 65px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: $white;
+            line-height: 18px;
+        }
+    }
+}
+
+/* footer area end  */

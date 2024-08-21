@@ -1,0 +1,60 @@
+/* Header css start  */
+.header-area {
+    width: 100%;
+    background-color: $black;
+    padding: 20px 0;
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menus {
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 30px;
+
+                a {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: $white;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .action-buttons {
+        .link-btn {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 18px;
+            color: $white;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        .sign-up-btn {
+            margin-left: 27px;
+            background-color: $white;
+            color: $light-black;
+            padding: 16px 40px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+
+/* Header css end  */

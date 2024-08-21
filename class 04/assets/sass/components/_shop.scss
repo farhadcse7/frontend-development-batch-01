@@ -1,0 +1,60 @@
+/* Shop now area start  */
+.shop-now-area {
+    margin-top: 140px;
+
+    .main {
+        background-color: $primary;
+        border-radius: 30px;
+        padding: 49px;
+        padding-right: 0;
+        position: relative;
+        overflow: hidden;
+
+        .text {
+            max-width: 486px;
+            width: 100%;
+
+            .title {
+                font-size: 48px;
+                font-weight: 900;
+                line-height: 58px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                margin-bottom: 40px;
+            }
+        }
+
+        .image {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            z-index: 1;
+
+            img {
+                margin-right: 40px;
+            }
+
+            &::before {
+                position: absolute;
+                width: 484px;
+                height: 408px;
+                background-color: rgba(5, 5, 5, 0.07);
+                border-radius: 500px 30px 30px 500px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                content: "";
+                z-index: -1;
+                border: 1px solid $white;
+            }
+
+        }
+
+    }
+
+}
+
+/* Shop now area end  */
