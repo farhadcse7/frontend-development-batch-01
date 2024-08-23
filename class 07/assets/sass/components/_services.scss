@@ -1,0 +1,38 @@
+/*=============================
+	06. Services area CSS start
+===============================*/
+
+.services-area-one {
+  background-color: var(--section-background);
+  padding-bottom: 120px;
+
+  .service-short-info {
+    margin-top: 40px;
+  }
+
+  .services-main {
+    .service-item {
+      border-top: 1px solid var(--border-colour);
+      margin-top: 10px;
+      padding-top: 10px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border-colour);
+      }
+
+      .title {
+        color: var(--black);
+        font-family: var(--font-secondary);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-left: 30px;
+      }
+    }
+  }
+}
